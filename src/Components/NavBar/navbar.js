@@ -1,0 +1,23 @@
+import React from 'react'
+import './navbar.css'
+import logo from '../../assets/Logo MFA.png'
+import { Link } from 'react-scroll'
+import ContactImg from '../../assets/contact.png'
+ 
+const Navbar = () => {
+  return (
+    <nav className="navbar">
+      <img src={logo} alt="Logo" className='logo' />
+      <div className="desktopMenu">
+        <Link className="desktopMenuListItem">Home</Link>
+        <Link className="desktopMenuListItem">About</Link>
+        <Link className="desktopMenuListItem">Portfolio</Link>
+        <Link className="desktopMenuListItem">Client</Link>
+      </div>
+      <button className="desktopMenuBtn">
+        <image src={ContactImg} alt="Contact Me" className="desktopMenuImg"/>Contact Me</button>
+    </nav>
+  )
+}
+
+export default Navbar
