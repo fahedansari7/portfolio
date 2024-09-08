@@ -1,6 +1,8 @@
 import Navbar from "./Components/NavBar/navbar";
 import Intro from "./Components/Intro/intro";
 import Skills from "./Components/Skills/skills";
+import Contact from "./Components/Contact/contact";
+import Footer from "./Components/Footer/footer";
 
 function App() {
   return (
@@ -8,6 +10,8 @@ function App() {
       <Navbar/>
       <Intro/>
       <Skills/>
+      <Contact/>
+      <Footer/>
      
     </div>
   );
