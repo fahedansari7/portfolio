@@ -15,13 +15,15 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
     
-        emailjs.sendForm('service_eguli0b', 'template_8q429qi', form.current, '7CRMsPlR6opZj8-idV375')
+        emailjs.sendForm('service_eguli0b', 'template_8q429qi', form.current, '0WN9w2EC5rN39YERg')
             .then((result) => {
               console.log(result.text);
               e.target.reset();
               alert('Email Sent !');
-            },    (error) => {
+            }) 
+            .catch(   (error) => {
               console.log(error.text);
+              alert('Failed to send email');
             });
       };
 
